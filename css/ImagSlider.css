@@ -1,0 +1,180 @@
+/* Base Styles */
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto 55px; /* Center horizontally */
+}
+
+.card-list .card-item {
+  height: auto;
+  color: #fff;
+  user-select: none;
+  padding: 0; /* Remove padding to make room for full-width image */
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  margin: 18px 0 40px;
+}
+
+.card-list .card-item {
+  width: 350px;
+  height: 500px;
+}
+
+.user-profession {
+  color: black;
+}
+
+.user-image img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #030728;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+  
+}
+
+.card-list .card-item .message-button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fbfbfb;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #ffffff;
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #fd7e14;
+}
+
+.shadow {
+  box-shadow: 0px 0px 40px white;
+}
+
+/* Small Screens (Extra Small: max-width: 500px) */
+@media (max-width: 500px) {
+  .slider-wrapper {
+    margin: 0 10px 20px;
+  }
+
+  .card-list .card-item {
+    width: 300px;
+    height: 350px;
+    margin: 10px auto; /* Center horizontally */
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .user-image img {
+    max-width: 300px; /* Adjust for smaller screens */
+  }
+}
+
+/* Tablets (Small: max-width: 768px) */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 20px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none; /* Hide buttons on small screens */
+  }
+
+  .card-list .card-item {
+    width: 350px;
+    height: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: transparent;
+  }
+}
+
+/* Medium Screens (Tablets and small desktops: max-width: 1024px) */
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+
+  .card-list .card-item {
+    width: 350px;
+    height: 450px;
+    margin: 15px auto;
+  }
+
+  .user-image img {
+    max-width: 350px;
+  }
+}
+
+/* Large Screens (Desktops: 1025px - 1920px) */
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .slider-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card-list .card-item {
+    width: 400px;
+    height: 500px;
+    margin: 20px auto;
+  }
+
+  .user-image img {
+    max-width: 400px;
+  }
+}
+
+/* Extra Large Screens (4K monitors: 1920px - 2560px) */
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .slider-wrapper {
+    max-width: 1800px;
+    margin: 0 auto 55px;
+    overflow: hidden;
+  }
+
+  .card-list .card-item {
+    width: 450px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .user-image img {
+    max-width: 450px;
+  }
+
+  .shadow {
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+}
+  
